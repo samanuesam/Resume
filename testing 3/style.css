@@ -204,7 +204,7 @@ textarea{
 }
 .dgrid{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .dh2{
     margin-top: 0px;
@@ -212,4 +212,20 @@ textarea{
 }
 .main{
     display: none;
+}
+textarea{
+    width: 300px;
+    height: 60px;
+}
+@media (max-width:1200px) {
+    .dgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:800px) {
+    .dgrid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
