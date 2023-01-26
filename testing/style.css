@@ -381,8 +381,38 @@ button:hover{
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 14px;
 }
-
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+textarea{
+    margin-left: 20px;
+    width: 400px;
+    height: 60px;
+}
+h2{
+    text-align: center;
+}
+@media (max-width:800px) {
+    .edittwo,.editfour{
+        display: block;
+    }
+    textarea{
+        margin-left: 20px;
+        width: 220px;
+        height: 100px;
+    }
+}
+@media (max-width:500px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+    }  
+    h2{
+      text-align: center;
+    } 
+}
+
