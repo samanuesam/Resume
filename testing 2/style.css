@@ -191,3 +191,15 @@ h2{
 .sam{
     background-color: red;
 }
+@media (max-width:800px) {
+    .user-input{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:500px) {
+    .user-input{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+}
