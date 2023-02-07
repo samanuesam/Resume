@@ -29,4 +29,23 @@ img:hover{
 }
 body{
     background-image: linear-gradient(#bdc3c7,#6dd5ed);
+    background-repeat: no-repeat,repeat;
+}
+@media (max-width:970px) {
+    .flex{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    img:hover{
+        transform: scale(1); 
+    }
+}
+@media (max-width:650px) {
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    img:hover{
+        transform: scale(1); 
+    }
 }
